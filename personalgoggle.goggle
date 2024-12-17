@@ -1,23 +1,52 @@
-title: Design, Front-End, and Gaming Focus (CS Skins Included)
-description: Prioritizes well-known design, UX, front-end, and gaming resources, with a boost for CS skins websites. Excludes clickbait and social media sites while focusing on research-based results.
-rules:
-  # Boost front-end, UX, and design resources
-  - boost: ["developer.mozilla.org", "stackoverflow.com", "smashingmagazine.com", "css-tricks.com", "uxdesign.cc", "aiga.org", "medium.com", "web.dev"]
+! name: Design, Front-End, and Gaming Focus
+! description: Prioritizes trusted design, UX, front-end, and CS gaming resources, including CS skins websites. Excludes clickbait and social media platforms for clean and research-oriented results.
+! public: true
+! author: Custom Goggle Creator
+! avatar: #0096FF
+! homepage: https://example.com
+! license: MIT
 
-  # Boost gaming content
-  - boost: ["ign.com", "pcgamer.com", "rockpapershotgun.com", "reddit.com/r/counterstrike", "thespike.gg"]
+! Boost trusted front-end, UX, and design resources
+|https://developer.mozilla.org|$boost=3
+|https://stackoverflow.com|$boost=3
+|https://smashingmagazine.com|$boost=2
+|https://css-tricks.com|$boost=2
+|https://uxdesign.cc|$boost=2
+|https://web.dev|$boost=2
+|https://aiga.org|$boost=2
 
-  # Boost CS:GO skins websites
-  - boost: ["cs.money", "skinport.com", "buff.163.com", "dmarket.com", "csgostash.com", "csgoempire.com", "tradeit.gg"]
+! Boost gaming and CS-specific resources
+|https://ign.com|$boost=2
+|https://pcgamer.com|$boost=2
+|https://rockpapershotgun.com|$boost=2
+|https://reddit.com/r/counterstrike|$boost=3
+|https://thespike.gg|$boost=2
 
-  # Prefer academic and research-based sources
-  - boost: ["arxiv.org", "jstor.org", "researchgate.net", "acm.org", "scholar.google.com"]
+! Boost CS skins websites
+|https://cs.money|$boost=3
+|https://skinport.com|$boost=3
+|https://buff.163.com|$boost=2
+|https://dmarket.com|$boost=2
+|https://csgostash.com|$boost=2
+|https://csgoempire.com|$boost=2
+|https://tradeit.gg|$boost=2
 
-  # Block clickbait and social media sites
-  - block: ["buzzfeed.com", "facebook.com", "tiktok.com", "pinterest.com", "9gag.com", "upworthy.com"]
+! Boost academic and research-based resources
+|https://arxiv.org|$boost=3
+|https://jstor.org|$boost=3
+|https://researchgate.net|$boost=3
+|https://acm.org|$boost=2
+|https://scholar.google.com|$boost=3
 
-  # Reduce trend-heavy, smaller blogs
-  - demote: ["wix.com", "medium.blog", "blogspot.com"]
+! Block clickbait and social media sites
+|https://buzzfeed.com|$discard
+|https://facebook.com|$discard
+|https://tiktok.com|$discard
+|https://pinterest.com|$discard
+|https://9gag.com|$discard
+|https://upworthy.com|$discard
 
-  # Only include reputable sources for specific searches
-  - only: ["developer.mozilla.org", "stackoverflow.com", "smashingmagazine.com", "css-tricks.com", "uxdesign.cc", "medium.com", "arxiv.org", "pcgamer.com", "rockpapershotgun.com", "cs.money", "skinport.com", "buff.163.com", "dmarket.com", "csgostash.com", "csgoempire.com", "tradeit.gg"]
+! Demote trend-heavy and smaller blogs
+/blogspot.com$downrank=2
+/wix.com$downrank=2
+/medium.blog$downrank=2
