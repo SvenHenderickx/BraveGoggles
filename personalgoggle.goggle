@@ -1,0 +1,23 @@
+title: Design, Front-End, and Gaming Focus (CS Skins Included)
+description: Prioritizes well-known design, UX, front-end, and gaming resources, with a boost for CS skins websites. Excludes clickbait and social media sites while focusing on research-based results.
+rules:
+  # Boost front-end, UX, and design resources
+  - boost: ["developer.mozilla.org", "stackoverflow.com", "smashingmagazine.com", "css-tricks.com", "uxdesign.cc", "aiga.org", "medium.com", "web.dev"]
+
+  # Boost gaming content
+  - boost: ["ign.com", "pcgamer.com", "rockpapershotgun.com", "reddit.com/r/counterstrike", "thespike.gg"]
+
+  # Boost CS:GO skins websites
+  - boost: ["cs.money", "skinport.com", "buff.163.com", "dmarket.com", "csgostash.com", "csgoempire.com", "tradeit.gg"]
+
+  # Prefer academic and research-based sources
+  - boost: ["arxiv.org", "jstor.org", "researchgate.net", "acm.org", "scholar.google.com"]
+
+  # Block clickbait and social media sites
+  - block: ["buzzfeed.com", "facebook.com", "tiktok.com", "pinterest.com", "9gag.com", "upworthy.com"]
+
+  # Reduce trend-heavy, smaller blogs
+  - demote: ["wix.com", "medium.blog", "blogspot.com"]
+
+  # Only include reputable sources for specific searches
+  - only: ["developer.mozilla.org", "stackoverflow.com", "smashingmagazine.com", "css-tricks.com", "uxdesign.cc", "medium.com", "arxiv.org", "pcgamer.com", "rockpapershotgun.com", "cs.money", "skinport.com", "buff.163.com", "dmarket.com", "csgostash.com", "csgoempire.com", "tradeit.gg"]
